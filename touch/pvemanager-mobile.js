@@ -4569,9 +4569,7 @@ Ext.define('PVE.Workspace', {
 	PVE.Workspace.loginData = loginData;
 
 	// also sets the cookie
-	Proxmox.Utils.setAuthData(loginData);
-
-	Proxmox.Utils.checked_command(Ext.emptyFn); // display subscription status
+        Proxmox.Utils.setAuthData(loginData);
 
 	PVE.Workspace.gotoPage('');
     },
